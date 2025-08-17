@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form </title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Web Page</h1>
+    <p>This page demonstrates <strong>lists, tables, media</strong>, and a complete <strong>HTML5 form</strong>.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>Shopping List</h2>
+    <ul>
+      <li>Milk</li>
+      <li>Bread</li>
+      <li>Eggs</li>
+      <li>Butter</li>
+    </ul>
+
+    <h2>Steps to Bake a Cake</h2>
+    <ol>
+      <li>Mix flour and sugar</li>
+      <li>Add eggs and milk</li>
+      <li>Bake in oven</li>
+      <li>Decorate with icing</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Student Information Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Full Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Nickson Kipruto</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mary Wanjiku</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>John Otieno</td>
+          <td>21</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Section</h2>
+    <p>Here’s a sample image, audio, and video.</p>
+
+    <figure>
+      <img src="https://via.placeholder.com/300x200" alt="Sample Image">
+      <figcaption>Sample Image</figcaption>
+    </figure>
+
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="320">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" pattern="[0-9]{10}" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required autocomplete="off">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="At least 6 characters" required minlength="6">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>
+          <input type="checkbox" name="subscribe" checked readonly>
+          Subscribe to newsletter (mandatory)
+        </label>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" placeholder="Tell us something about yourself..." rows="4" required></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HTML</p>
+  </footer>
+
+</body>
+</html>
